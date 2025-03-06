@@ -1,0 +1,34 @@
+<div class="container">
+    <h2 *ngIf="!category">All Products</h2>
+    <h2 *ngIf="category">{{ category }} Products</h2>
+  
+    <div class="alert alert-danger" *ngIf="errorMessage">
+      {{ errorMessage }}
+    </div>
+  
+    <div *ngIf="loading" class="text-center">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  
+    <div class="row row-cols-1 row-cols-md-3 g-4" *ngIf="!loading">
+      <div class="col" *ngFor="let product of products">
+        <div class="card h-100">
+          <img [src]="product.imageUrl" class="card-img-top" alt="{{ product.name }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <p class="card-text price">${{ product.price.toFixed(2) }}</p>
+            <div class="d-flex justify-content-between">
+              <a [routerLink]="['/product', product.id]" class="btn btn-primary">View Details</a>
+              <button class="btn btn-success" (click)="addToCart(product)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="no-products" *ngIf="!loading && products.length === 0">
+      <p>No products found in this category.</p>
+    </div>
+  </div>
