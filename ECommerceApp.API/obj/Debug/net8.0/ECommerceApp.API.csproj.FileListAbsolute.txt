@@ -31,3 +31,4 @@ C:\Users\a7mad\Desktop\vsFolder\TaibahValley\e-commerce\ECommerceApp.API\obj\Deb
 C:\Users\a7mad\Desktop\vsFolder\TaibahValley\e-commerce\ECommerceApp.API\obj\Debug\net8.0\ECommerceApp.API.pdb
 C:\Users\a7mad\Desktop\vsFolder\TaibahValley\e-commerce\ECommerceApp.API\obj\Debug\net8.0\ECommerceApp.API.genruntimeconfig.cache
 C:\Users\a7mad\Desktop\vsFolder\TaibahValley\e-commerce\ECommerceApp.API\obj\Debug\net8.0\ref\ECommerceApp.API.dll
+C:\Users\a7mad\Desktop\vsFolder\TaibahValley\e-commerce\ECommerceApp.API\obj\Debug\net8.0\ECommerceApp.API.sourcelink.json
