@@ -12,29 +12,6 @@ This project is a simple e-commerce application built using Angular for the fron
 - **Error Handling**: Manages API request errors gracefully.
 - **Bonus Features** (Optional): Backend API for cart persistence 
 
-## Folder Structure
-```
-/ecommerce-app
-│── /frontend  (Angular Application)
-│   │── src/app
-│   │   │── components/
-│   │   │   │── product-list/
-│   │   │   │── product-detail/
-│   │   │   │── cart/
-│   │   │── services/
-│   │   │   │── product.service.ts
-│   │   │   │── cart.service.ts
-│   │   │── app.module.ts
-│   │   │── app.component.ts
-│── /backend (ASP.NET Core API)
-│   │── Controllers/
-│   │   │── ProductController.cs
-│   │   │── CartController.cs
-│   │── Models/
-│   │── Services/
-│   │── Program.cs
-│   │── Startup.cs
-```
 
 ## Setup and Installation
 ### Prerequisites
