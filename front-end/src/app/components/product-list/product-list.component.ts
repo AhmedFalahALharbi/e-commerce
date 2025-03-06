@@ -1,9 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 import { ProductService, Product } from '../../services/product.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-product-list',
+  standalone: true,
+  imports: [CommonModule, RouterModule],
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
@@ -52,5 +56,9 @@ export class ProductListComponent implements OnInit {
         }
       });
     }
+  }
+
+  addToCart(product: Product): void {
+    // Implement this method to add to cart
   }
 }
