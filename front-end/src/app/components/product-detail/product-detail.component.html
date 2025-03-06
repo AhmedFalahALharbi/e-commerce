@@ -11,7 +11,7 @@
   
     <div class="row" *ngIf="!loading && product">
       <div class="col-md-6">
-        <img [src]="product.imageUrl" class="img-fluid product-image" alt="{{ product.name }}">
+        <img [src]="product.imageUrl" class="img-fluid product-image w-75" alt="{{ product.name }}">
       </div>
       <div class="col-md-6">
         <h2>{{ product.name }}</h2>

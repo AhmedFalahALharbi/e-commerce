@@ -59,6 +59,5 @@ export class ProductListComponent implements OnInit {
   }
 
   addToCart(product: Product): void {
-    // Implement this method to add to cart
   }
 }

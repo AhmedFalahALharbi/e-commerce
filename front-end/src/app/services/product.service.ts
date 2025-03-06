@@ -20,7 +20,6 @@ export class ProductService {
 
   constructor(private http: HttpClient) { }
 
-  // Get all products
   getProducts(): Observable<Product[]> {
     return this.http.get<Product[]>(this.apiUrl)
       .pipe(
@@ -28,7 +27,6 @@ export class ProductService {
       );
   }
 
-  // Get a single product by ID
   getProduct(id: number): Observable<Product> {
     return this.http.get<Product>(`${this.apiUrl}/${id}`)
       .pipe(
@@ -36,7 +34,6 @@ export class ProductService {
       );
   }
 
-  // Get products by category
   getProductsByCategory(category: string): Observable<Product[]> {
     return this.http.get<Product[]>(`${this.apiUrl}/category/${category}`)
       .pipe(
@@ -49,10 +46,8 @@ export class ProductService {
     let errorMessage = '';
     
     if (error.error instanceof ErrorEvent) {
-      // Client-side error
       errorMessage = `Error: ${error.error.message}`;
     } else {
-      // Server-side error
       switch (error.status) {
         case 404:
           errorMessage = 'The requested resource was not found.';

@@ -21,7 +21,7 @@
             <tr *ngFor="let item of cartItems">
               <td class="align-middle">
                 <div class="d-flex align-items-center">
-                  <img [src]="item.product.imageUrl" class="cart-item-image me-3" alt="{{ item.product.name }}">
+                  <img [src]="item.product.imageUrl" class="cart-item-image me-3 w-50" alt="{{ item.product.name }}">
                   <div>
                     <h5 class="mb-0">{{ item.product.name }}</h5>
                     <small class="text-muted">{{ item.product.category }}</small>

@@ -21,7 +21,7 @@ namespace ECommerceApp.API.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Product>> GetProducts()
         {
-            return Ok(_products);
+            return _products;
         }
 
         // GET: api/products/5
@@ -38,6 +38,10 @@ namespace ECommerceApp.API.Controllers
             return Ok(product);
         }
 
+        public static List<Product> GetProductsList()
+{
+    return _products;
+}
         // GET: api/products/category/Electronics
         [HttpGet("category/{category}")]
         public ActionResult<IEnumerable<Product>> GetProductsByCategory(string category)
