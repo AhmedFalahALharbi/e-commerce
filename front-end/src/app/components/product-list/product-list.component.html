@@ -15,7 +15,7 @@
     <div class="row row-cols-1 row-cols-md-3 g-4" *ngIf="!loading">
       <div class="col" *ngFor="let product of products">
         <div class="card h-100">
-          <img [src]="product.imageUrl" class="card-img-top" alt="{{ product.name }}">
+          <img [src]="product.imageUrl" class="card-img-top" alt="{{ product.name }}" width="20vh" height="200vh">
           <div class="card-body">
             <h5 class="card-title">{{ product.name }}</h5>
             <p class="card-text price">${{ product.price.toFixed(2) }}</p>
